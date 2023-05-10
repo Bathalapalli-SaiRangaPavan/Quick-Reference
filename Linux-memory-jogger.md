@@ -45,12 +45,12 @@
 23. ```ssh```: Connects to a remote machine using Secure Shell (SSH) protocol.
 24. ```scp```: Copies files securely between two machines using SSH.
 25. ```tar```: Creates or extracts compressed archive files.
-```tar cf file.tar files```: Create a tar named file.tar containing files.
-```tar xf file.tar```: Extract the files from file.tar.
-```tar czf file.tar.gz files``` Create a tar with Gzip compression.
-```tar xzf file.tar.gz```: Extract a tar using Gzip.
-```gzip file```: Compresses file and renames it to file.gz.
-```gzip -d file.gz```: Decompresses file.gz back to file.
+- ```tar cf file.tar files```: Create a tar named file.tar containing files.
+- ```tar xf file.tar```: Extract the files from file.tar.
+- ```tar czf file.tar.gz files``` Create a tar with Gzip compression.
+- ```tar xzf file.tar.gz```: Extract a tar using Gzip.
+- ```gzip file```: Compresses file and renames it to file.gz.
+- ```gzip -d file.gz```: Decompresses file.gz back to file.
 26. ```curl```: Sends HTTP requests and receives responses.
 27. ```wget```: Downloads files from the internet.
 28. ```ping```: Tests connectivity to a network host.
