@@ -46,3 +46,20 @@
 28. ```docker volume prune```: removes all unused volumes.
 29. ```docker-compose up```: starts the Docker containers defined in the docker-compose.yml file.
 30. ```docker-compose down```: stops and removes the Docker containers defined in the docker-compose.yml file.
+
+#### Docker Swarm 
+- ```docker info```: We can see whether Swarm is acive or not. By default it will be inactive.
+- ```docker swarm init```: Initialize a Docker Swarm:.
+- ```docker swarm join --token <token> <IP:port>```: Join a Docker Swarm as a worker.
+- ```docker swarm join-token manager```: Docker swarm join-token manager.
+- ```docker node ls```: List nodes in the Docker Swarm.
+- ```docker service —help```: Service in swarm replaces docker run.
+- ```docker service create --name <service_name> <image_name>```: Create a Docker service.
+- ```docker service scale <service_name>=<replica_count>```: Scale a Docker service
+- ```docker service ls```: List the services.
+- ```docker service ps {service_name}```: To get more o/p.
+- ```docker service update --image <new_image_name> <service_name>```: Update a Docker service.
+- ```docker service rm <service_name>```:Remove a Docker service.
+- ```docker service inspect <service_name>```: Inspect a Docker service.
+- ```docker node update --availability drain <node_name>```: Drain a node in the Docker Swarm.
+- ```docker swarm leave --force```: Remove a node from the Docker Swarm.
