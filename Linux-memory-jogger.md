@@ -103,3 +103,39 @@
 |    +-------------------- hour (0 - 23)
 +------------------------- minute (0 - 59)
 ```
+
+53. ```vi <file name>``` - vi editor is a powerful text editor 
+```
+#### Navigation:
+
+h: Move the cursor left.
+j: Move the cursor down.
+k: Move the cursor up.
+l: Move the cursor right.
+0: Move to the beginning of the current line.
+$: Move to the end of the current line.
+gg: Move to the first line of the file.
+G: Move to the last line of the file.
+Ctrl+f: Move forward one page.
+Ctrl+b: Move backward one page.
+:n: Move to line number n.
+
+#### Editing:
+
+i: Insert text before the cursor.
+a: Append text after the cursor.
+A: Append text at the end of the current line.
+o: Open a new line below the current line.
+O: Open a new line above the current line.
+x: Delete the character under the cursor.
+dd: Delete the current line.
+yy: Yank (copy) the current line.
+p: Paste the previously yanked or deleted text.
+
+#### Saving and Quitting:
+
+:w: Save the file.
+:q: Quit the editor.
+:q!: Quit without saving changes.
+:wq or :x: Save and quit the editor.
+```
