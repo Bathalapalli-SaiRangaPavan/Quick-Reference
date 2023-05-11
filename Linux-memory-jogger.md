@@ -139,3 +139,31 @@ p: Paste the previously yanked or deleted text.
 :q!: Quit without saving changes.
 :wq or :x: Save and quit the editor.
 ```
+
+54. ```SCP```: Secure Copy is a command-line tool used to securely transfer files between a local and remote system over SSH. 
+- ```scp <local_file> <remote_user>@<remote_host>:<remote_directory>```: Copy a file from local to remote.
+```
+scp file.txt user@example.com:/home/user/files/
+```
+- ```scp <remote_user>@<remote_host>:<remote_file> <local_directory>```: Copy a file from remote to local.
+```
+scp user@example.com:/home/user/files/file.txt /path/to/local/directory/
+```
+- ```scp -r <local_directory> <remote_user>@<remote_host>:<remote_directory>```: Copy a directory from local to remote.
+```
+scp -r my_directory user@example.com:/home/user/
+```
+- ```scp -r <remote_user>@<remote_host>:<remote_directory> <local_directory>``` : Copy a directory from remote to local.
+```
+scp -r user@example.com:/home/user/my_directory /path/to/local/directory/
+```
+- ```scp <local_file1> <local_file2> ... <remote_user>@<remote_host>:<remote_directory>```: Copy multiple files from local to remote.
+```
+scp file1.txt file2.txt user@example.com:/home/user/files/
+```
+- ```scp <local_directory>/<pattern> <remote_user>@<remote_host>:<remote_directory>```: Copy files matching a pattern from local to remote.
+```
+scp my_directory/*.txt user@example.com:/home/user/files/
+```
+
+
